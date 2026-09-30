@@ -34,30 +34,20 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Questions, bugs or ideas: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. We answer within 48 hours. If something does not work in your car, please include your car make and model, whether CarPlay is wired or wireless, and your iOS version.</p>
 
 <h2>Setting up the welcome sound</h2>
-<p>The welcome is played by a Shortcuts automation that you create once. Dashie's setup guide walks you through it, and its <strong>Test</strong> button plays your sound right away so you can check it. The steps, in case you want them here:</p>
+<p>Dashie needs <strong>iOS 27</strong>. The welcome is played by a ready-made Dashie shortcut with a CarPlay automation. Dashie's setup guide takes you through three steps, and its <strong>Test</strong> button plays your sound right away so you can check it. The steps, in case you want them here:</p>
 <div class="card">
-<h3>iOS 26</h3>
 <ol>
-<li>Open <strong>Shortcuts</strong> and go to the <strong>Automation</strong> tab, then tap <strong>+</strong>.</li>
-<li>Choose <strong>CarPlay</strong>, then <strong>Connects</strong>, then <strong>Run Immediately</strong>. Tap <strong>Next</strong>.</li>
-<li>Tap <strong>New Blank Automation</strong>, then <strong>Add Action</strong>. Search for <strong>Dashie</strong> and choose <strong>Play Drive Sound</strong>.</li>
-<li>Set the event to <strong>CarPlay connects</strong> and tap <strong>Done</strong>.</li>
-<li>Optional (Pro): repeat with <strong>Disconnects</strong> and the event <strong>CarPlay disconnects</strong> for a goodbye sound, and with a location trigger and <strong>Arrive home</strong> for an arrival sound.</li>
+<li><strong>Add the shortcut.</strong> On your iPhone, open <a href="https://www.icloud.com/shortcuts/9a5451186709457485336b09ea9415b1">the Dashie shortcut</a> (or tap <strong>Add</strong> in Dashie's setup guide). Shortcuts opens; tap <strong>Add Shortcut</strong>. Already added it? Don't add it again, or you get a second copy.</li>
+<li><strong>Turn on the automation.</strong> In Shortcuts, open the <strong>Dashie</strong> shortcut, tap the arrow on the <strong>CarPlay</strong> row and turn on <strong>Automation</strong>.</li>
+<li><strong>Add the widget.</strong> On your iPhone, go to <strong>Settings &rsaquo; General &rsaquo; CarPlay &rsaquo; your car &rsaquo; Widgets &rsaquo; Add Widget</strong> and choose <strong>Dashie A</strong> (or the slot you saved).</li>
 </ol>
-<h3>iOS 27</h3>
-<ol>
-<li>Open <strong>Shortcuts</strong>, go to <strong>Automation</strong> and tap <strong>+</strong>. A new shortcut opens; tap <strong>Edit</strong>.</li>
-<li>In the action panel open the <strong>Automation</strong> category, choose <strong>CarPlay</strong> and <strong>Connects</strong> as the trigger block. Keep <strong>Confirm Before Run</strong> off.</li>
-<li>Add <strong>Dashie</strong> &rarr; <strong>Play Drive Sound</strong> and set the event to <strong>CarPlay connects</strong>.</li>
-<li>Name the shortcut, for example "Dashie welcome", and you are done.</li>
-</ol>
-<p class="note">Menu names can differ slightly between iOS versions. You choose which sound plays for each event inside Dashie, not in Shortcuts.</p>
+<p class="note">Link didn't open? In Shortcuts, tap <strong>+</strong>, then the <strong>Automation</strong> chip; search <strong>CarPlay</strong> and pick it; add <strong>Dashie</strong> &rarr; <strong>Play Drive Sound</strong> with the event <strong>CarPlay connects</strong>, and rename the shortcut "Dashie". Optional (Pro): a goodbye or arrival sound needs its own automation, set up the same way, with the event <strong>CarPlay disconnects</strong> or, with Shortcuts' <strong>Arrive</strong> trigger, <strong>Arrive home</strong>. You choose which sound plays for each event inside Dashie, not in Shortcuts.</p>
 </div>
 
 <h2>The sound did not play in my car</h2>
 <ol>
 <li>Open Dashie and tap <strong>Test</strong>. If you hear it, the sound itself works and the problem is the automation or the car.</li>
-<li>In Shortcuts, check that the automation trigger is <strong>CarPlay</strong> (not Bluetooth), that it is set to <strong>Run Immediately</strong> (iOS 26) or that <strong>Confirm Before Run</strong> is off (iOS 27), and that the event in the Dashie action is <strong>CarPlay connects</strong>.</li>
+<li>In Shortcuts, open the <strong>Dashie</strong> shortcut and check that its trigger is <strong>CarPlay</strong> (not Bluetooth), that <strong>Automation</strong> is on in the <strong>CarPlay</strong> row, and that the event in the Dashie action is <strong>CarPlay connects</strong>.</li>
 <li>Check the sound you chose for that event in Dashie. Without Pro, only the greeting by name plays, and only when CarPlay connects.</li>
 <li>Turn up your car's volume. The sound comes from your iPhone through the car's audio, so the car has to be on the CarPlay source.</li>
 <li>On wireless CarPlay the audio route can take a few seconds to be ready, so the sound may start a moment after the screen appears. If your car starts its own music or chime at the same moment, they can overlap.</li>
@@ -70,7 +60,7 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 
 <h2>My widget does not appear on the car screen</h2>
 <ul>
-<li>CarPlay widgets need <strong>iOS 26</strong> and a CarPlay-compatible car. Home Screen and StandBy widgets need no car.</li>
+<li>CarPlay widgets need <strong>iOS 27</strong> and a CarPlay-compatible car. Home Screen and StandBy widgets need no car.</li>
 <li>On your iPhone open <strong>Settings &rarr; General &rarr; CarPlay</strong>, choose your car and check the <strong>Widgets</strong> section.</li>
 <li>On the car screen, use the widgets' edit option and add Dashie's small widget to your stack.</li>
 <li>Widgets update within a few minutes of saving; they are not real-time gauges. Give it a few minutes, then reconnect.</li>
@@ -96,30 +86,20 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Soru, hata ya da fikir için: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. 48 saat içinde yanıtlıyoruz. Arabanda bir şey çalışmıyorsa lütfen araç marka ve modelini, CarPlay'in kablolu mu kablosuz mu olduğunu ve iOS sürümünü yaz.</p>
 
 <h2>Karşılama sesini kurma</h2>
-<p>Karşılamayı, bir kez kuracağın bir Kısayollar otomasyonu çalar. Dashie'nin kurulum rehberi seni adım adım yönlendirir; <strong>Test et</strong> düğmesi sesi hemen çalar, böylece kontrol edebilirsin. Adımlar burada da dursun:</p>
+<p>Dashie <strong>iOS 27</strong> ister. Karşılamayı, CarPlay otomasyonu içeren hazır bir Dashie kestirmesi çalar. Dashie'nin kurulum rehberi seni üç adımda götürür; <strong>Test et</strong> düğmesi sesi hemen çalar, böylece kontrol edebilirsin. Adımlar burada da dursun:</p>
 <div class="card">
-<h3>iOS 26</h3>
 <ol>
-<li><strong>Kısayollar</strong>'ı aç, <strong>Otomasyon</strong> sekmesine geç ve <strong>+</strong>'ya dokun.</li>
-<li><strong>CarPlay</strong>'i, sonra <strong>Bağlandığında</strong>'yı, sonra <strong>Hemen Çalıştır</strong>'ı seç. <strong>İleri</strong>'ye dokun.</li>
-<li><strong>Yeni Boş Otomasyon</strong>'a, sonra <strong>Eylem Ekle</strong>'ye dokun. <strong>Dashie</strong>'yi ara ve <strong>Play Drive Sound</strong> eylemini seç.</li>
-<li>Olayı <strong>CarPlay connects</strong> yap ve <strong>Bitti</strong>'ye dokun.</li>
-<li>İsteğe bağlı (Pro): veda sesi için <strong>Bağlantı Kesildiğinde</strong> tetikleyicisi ve <strong>CarPlay disconnects</strong> olayıyla, eve varış sesi için konum tetikleyicisi ve <strong>Arrive home</strong> olayıyla tekrarla.</li>
+<li><strong>Kestirmeyi ekle.</strong> iPhone'unda <a href="https://www.icloud.com/shortcuts/9a5451186709457485336b09ea9415b1">Dashie kestirmesini</a> aç (ya da Dashie'nin kurulum rehberinde <strong>Ekle</strong>'ye dokun). Kestirmeler açılır; <strong>Kestirme Ekle</strong>'ye dokun. Zaten eklediysen yeniden ekleme; yoksa ikinci bir kopya oluşur.</li>
+<li><strong>Otomasyonu aç.</strong> Kestirmeler'de <strong>Dashie</strong> kestirmesini aç, <strong>CarPlay</strong> satırındaki oka dokun ve <strong>Otomasyon</strong> anahtarını aç.</li>
+<li><strong>Widget'ı ekle.</strong> iPhone'unda <strong>Ayarlar &rsaquo; Genel &rsaquo; CarPlay &rsaquo; araban &rsaquo; Araç Takımları &rsaquo; Araç Takımı Ekle</strong> yolunu izle ve <strong>Dashie A</strong>'yı (ya da kaydettiğin yuvayı) seç.</li>
 </ol>
-<h3>iOS 27</h3>
-<ol>
-<li><strong>Kısayollar</strong>'ı aç, <strong>Otomasyon</strong>'a git ve <strong>+</strong>'ya dokun. Yeni bir kısayol açılır; <strong>Düzenle</strong>'ye dokun.</li>
-<li>Eylem panelinde <strong>Otomasyon</strong> kategorisini aç, tetikleyici blok olarak <strong>CarPlay</strong> ve <strong>Bağlandığında</strong>'yı seç. <strong>Çalıştırmadan Önce Onayla</strong> kapalı kalsın.</li>
-<li><strong>Dashie</strong> &rarr; <strong>Play Drive Sound</strong> eylemini ekle ve olayı <strong>CarPlay connects</strong> yap.</li>
-<li>Kısayola bir ad ver (örneğin "Dashie karşılama"); hepsi bu.</li>
-</ol>
-<p class="note">Menü adları iOS sürümüne göre biraz değişebilir. Her olayda hangi sesin çalacağını Kısayollar'da değil, Dashie'nin içinde seçersin.</p>
+<p class="note">Bağlantı açılmadı mı? Kestirmeler'de <strong>+</strong>'ya, sonra <strong>Otomasyon</strong> çipine dokun; <strong>CarPlay</strong> ara ve seç; <strong>Dashie</strong> &rarr; <strong>Sürüş Sesini Çal</strong> eylemini <strong>CarPlay bağlanınca</strong> olayıyla ekle ve kestirmenin adını "Dashie" yap. İsteğe bağlı (Pro): veda ya da varış sesi için aynı yolla ayrı bir otomasyon kur; olay <strong>CarPlay ayrılınca</strong> ya da Kestirmeler'in <strong>Vardığımda</strong> tetikleyicisiyle <strong>Eve varınca</strong>. Her olayda hangi sesin çalacağını Kestirmeler'de değil, Dashie'nin içinde seçersin.</p>
 </div>
 
 <h2>Ses arabada çalmadı</h2>
 <ol>
 <li>Dashie'yi aç ve <strong>Test et</strong>'e dokun. Sesi duyuyorsan ses motoru çalışıyordur; sorun otomasyonda ya da arabadadır.</li>
-<li>Kısayollar'da otomasyon tetikleyicisinin <strong>CarPlay</strong> olduğunu (Bluetooth değil), <strong>Hemen Çalıştır</strong>'ın (iOS 26) seçili ya da <strong>Çalıştırmadan Önce Onayla</strong>'nın (iOS 27) kapalı olduğunu ve Dashie eylemindeki olayın <strong>CarPlay connects</strong> olduğunu kontrol et.</li>
+<li>Kestirmeler'de <strong>Dashie</strong> kestirmesini aç; tetikleyicinin <strong>CarPlay</strong> olduğunu (Bluetooth değil), <strong>CarPlay</strong> satırında <strong>Otomasyon</strong>'un açık olduğunu ve Dashie eylemindeki olayın <strong>CarPlay bağlanınca</strong> olduğunu kontrol et.</li>
 <li>Dashie'de o olay için seçtiğin sese bak. Pro olmadan yalnızca adınla karşılama çalar, o da yalnızca CarPlay bağlandığında.</li>
 <li>Arabanın ses düzeyini aç. Ses iPhone'undan arabanın ses sistemi üzerinden çalar; araç CarPlay kaynağında olmalı.</li>
 <li>Kablosuz CarPlay'de ses yolunun hazır olması birkaç saniye sürebilir; ses ekran gelir gelmez değil, biraz sonra başlayabilir. Araban aynı anda kendi müziğini ya da zilini başlatıyorsa ikisi üst üste binebilir.</li>
@@ -132,8 +112,8 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 
 <h2>Widget'ım araç ekranında görünmüyor</h2>
 <ul>
-<li>CarPlay widget'ları <strong>iOS 26</strong> ve CarPlay uyumlu bir araba ister. Ana Ekran ve StandBy widget'ları için araba gerekmez.</li>
-<li>iPhone'unda <strong>Ayarlar &rarr; Genel &rarr; CarPlay</strong>'i aç, arabanı seç ve <strong>Widget'lar</strong> bölümüne bak.</li>
+<li>CarPlay widget'ları <strong>iOS 27</strong> ve CarPlay uyumlu bir araba ister. Ana Ekran ve StandBy widget'ları için araba gerekmez.</li>
+<li>iPhone'unda <strong>Ayarlar &rarr; Genel &rarr; CarPlay</strong>'i aç, arabanı seç ve <strong>Araç Takımları</strong> bölümüne bak.</li>
 <li>Araç ekranında widget'ların düzenleme seçeneğini kullan ve Dashie'nin küçük widget'ını yığınına ekle.</li>
 <li>Widget'lar kaydettikten sonra dakikalar içinde güncellenir; gerçek zamanlı gösterge değildir. Birkaç dakika bekle, sonra yeniden bağlan.</li>
 <li>Bazı şablonlar listede "CarPlay için optimize değil" olarak işaretlidir. Ana Ekranında ve StandBy'da yine çalışırlar.</li>
