@@ -34,29 +34,41 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Questions, bugs or ideas: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. We answer within 48 hours. If something does not work in your car, please include your car make and model, whether CarPlay is wired or wireless, and your iOS version.</p>
 
 <h2>Setting up the welcome sound</h2>
-<p>Dashie needs <strong>iOS 27</strong>. The welcome is played by a ready-made Dashie shortcut with a CarPlay automation. Dashie's setup guide takes you through three steps, and its <strong>Test</strong> button plays your sound right away so you can check it. The steps, in case you want them here:</p>
+<p>Dashie needs <strong>iOS 27</strong>. The welcome is played by a Dashie shortcut with a CarPlay automation, and Dashie hands you that shortcut as a file. Dashie's setup guide (<strong>Set up and check</strong>) takes you through three steps, and its <strong>Test</strong> button plays your sound right away so you can check it. The steps, in case you want them here:</p>
 <div class="card">
 <ol>
-<li><strong>Add the shortcut.</strong> On your iPhone, open <a href="https://www.icloud.com/shortcuts/9a5451186709457485336b09ea9415b1">the Dashie shortcut</a> (or tap <strong>Add</strong> in Dashie's setup guide). Shortcuts opens; tap <strong>Add Shortcut</strong>. Already added it? Don't add it again, or you get a second copy.</li>
-<li><strong>Turn on the automation.</strong> In Shortcuts, open the <strong>Dashie</strong> shortcut, tap the arrow on the <strong>CarPlay</strong> row and turn on <strong>Automation</strong>.</li>
+<li><strong>Add the shortcut.</strong> In the setup guide tap <strong>Add</strong>. In the sheet that opens, pick <strong>Shortcuts</strong>, then tap <strong>Add Shortcut</strong>. The shortcut is named in your app language, for example <strong>Dashie Connects</strong>. Already added it? Don't add it a second time, or you get two copies. Deleted it later? Reopen the setup guide: the button now reads <strong>Add again</strong>.</li>
+<li><strong>Turn on the automation, then run it once.</strong> Tap <strong>Open</strong> (or open the shortcut in Shortcuts). On the <strong>CarPlay</strong> row (&ldquo;When CarPlay Is Connected&rdquo;) tap the arrow and turn on <strong>Automation</strong>. Then tap &#9654; once to run the shortcut and, when iOS asks, allow Dashie to run its actions.</li>
 <li><strong>Add the widget.</strong> On your iPhone, go to <strong>Settings &rsaquo; General &rsaquo; CarPlay &rsaquo; your car &rsaquo; Widgets &rsaquo; Add Widget</strong> and choose <strong>Dashie A</strong> (or the slot you saved).</li>
 </ol>
-<p class="note">Link didn't open? In Shortcuts, tap <strong>+</strong>, then the <strong>Automation</strong> chip; search <strong>CarPlay</strong> and pick it; add <strong>Dashie</strong> &rarr; <strong>Play Drive Sound</strong> with the event <strong>CarPlay connects</strong>, and rename the shortcut "Dashie". Optional (Pro): a goodbye or arrival sound needs its own automation, set up the same way, with the event <strong>CarPlay disconnects</strong> or, with Shortcuts' <strong>Arrive</strong> trigger, <strong>Arrive home</strong>. You choose which sound plays for each event inside Dashie, not in Shortcuts.</p>
+<p class="note">Shortcut not added? Under the first step choose <strong>Set it up by hand</strong>: in Shortcuts tap <strong>+</strong>, then the <strong>Automation</strong> chip; search <strong>CarPlay</strong> and pick it; add <strong>Dashie</strong> &rarr; <strong>Play Drive Sound</strong> with the event <strong>CarPlay connects</strong>, and rename the shortcut "Dashie Connects". You choose which sound plays for each moment inside Dashie, not in Shortcuts.</p>
 </div>
+
+<h2>Goodbye and arrival sounds (Pro)</h2>
+<p>Pick a sound for <strong>Disconnects</strong> or <strong>Arrive home</strong> in Dashie &rsaquo; <strong>Sounds</strong>. A card <strong>Shortcut for this moment</strong> then shows the same two steps: add the shortcut (<strong>Dashie Disconnects</strong> or <strong>Dashie Arrive home</strong>), open it, turn on <strong>Automation</strong> and run it once with &#9654;. For <strong>Arrive home</strong>, pick your location in the shortcut when you open it. If you start the setup over (<strong>Settings &rsaquo; Reopen setup</strong> &rsaquo; <strong>Start over</strong>), Dashie forgets which steps you finished; your sounds and settings stay.</p>
 
 <h2>The sound did not play in my car</h2>
 <ol>
 <li>Open Dashie and tap <strong>Test</strong>. If you hear it, the sound itself works and the problem is the automation or the car.</li>
-<li>In Shortcuts, open the <strong>Dashie</strong> shortcut and check that its trigger is <strong>CarPlay</strong> (not Bluetooth), that <strong>Automation</strong> is on in the <strong>CarPlay</strong> row, and that the event in the Dashie action is <strong>CarPlay connects</strong>.</li>
-<li>Check the sound you chose for that event in Dashie. Without Pro, only the greeting by name plays, and only when CarPlay connects.</li>
+<li>In Shortcuts, open the Dashie shortcut and check that its trigger is <strong>CarPlay</strong> (not Bluetooth) and that <strong>Automation</strong> is on (tap the arrow on the <strong>CarPlay</strong> row). Run it once with &#9654;: until you have, iOS may still be waiting for your permission for Dashie's actions.</li>
+<li>Deleted the shortcut? Open Dashie &rsaquo; <strong>Settings &rsaquo; Reopen setup</strong> and tap <strong>Add again</strong>.</li>
+<li>Check the sound you chose for that moment in Dashie. Without Pro, only the greeting by name plays, and only when CarPlay connects.</li>
 <li>Turn up your car's volume. The sound comes from your iPhone through the car's audio, so the car has to be on the CarPlay source.</li>
-<li>On wireless CarPlay the audio route can take a few seconds to be ready, so the sound may start a moment after the screen appears. If your car starts its own music or chime at the same moment, they can overlap.</li>
+<li>On wireless CarPlay the audio route can take a moment. When CarPlay connects, Dashie waits up to 2 seconds for the car's audio and starts the sound after a short silent lead-in, so you may hear it about two seconds after the screen appears. If the car's audio is not ready in time, the greeting plays from the iPhone's speaker instead. If your car starts its own music or chime at the same moment, they can overlap.</li>
 <li>Restart your iPhone once and make sure it runs the latest iOS update.</li>
 </ol>
 <p>Still stuck? Email us with the details from the Contact section.</p>
 
 <h2>The goodbye sound does not play from my phone</h2>
-<p>When the car switches off there is no car speaker left, so the sound could only come out of the iPhone's own speaker. To avoid surprising you in public, Dashie stays quiet on the phone's own speaker unless you allow it: open Dashie &rarr; <strong>Settings</strong> and turn on <strong>Play from phone speaker</strong>. The greeting when CarPlay connects is not affected: it plays through the car's audio.</p>
+<p>When the car switches off there is no car speaker left, so the <strong>Disconnects</strong> and <strong>Arrive home</strong> sounds can only come out of the iPhone's own speaker. The first time you bind a sound to one of them, Dashie turns <strong>Play from phone speaker</strong> on for you. If you switched it off, those sounds stay quiet when the car isn't connected: open Dashie &rarr; <strong>Settings</strong> and turn it back on. The greeting when CarPlay connects plays through the car's audio.</p>
+
+<h2>The drive card (Live Activity)</h2>
+<p>When the Dashie shortcut runs as CarPlay connects, Dashie also starts a Live Activity: a card with your car and the greeting. iOS shows it on the Lock Screen and in the Dynamic Island, and can show it on the CarPlay Dashboard. It ends when your <strong>Disconnects</strong> shortcut runs (a Pro sound) or after 8 hours at most; without that shortcut the card stays until the 8 hours are up or the next connection starts a new one.</p>
+<ul>
+<li>The first time, iOS asks under the card on the Lock Screen whether to allow Live Activities from Dashie. Choose <strong>Allow</strong>; if it asks again later, choose <strong>Always Allow</strong>.</li>
+<li>No card? Check <strong>Settings &rsaquo; Dashie &rsaquo; Live Activities</strong> on your iPhone.</li>
+<li>The card holds only your car and the greeting. It sends nothing anywhere.</li>
+</ul>
 
 <h2>My widget does not appear on the car screen</h2>
 <ul>
@@ -70,10 +82,10 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <h2>Pro, the free trial, refunds</h2>
 <p><strong>What is free?</strong> Everything can be previewed: listen to every sound, open every template, design with your own car. The greeting by name is free with no time limit. Dashie Pro lets you save and add widgets, use any sound for every moment, mix sounds and add your own file.</p>
 <p><strong>Price and trial.</strong> The yearly plan includes a 3-day free trial; the lifetime option is a single payment. There are no weekly plans. The price in your currency is shown before you confirm. To avoid being charged, cancel at least 24 hours before the trial or the period ends: <strong>Settings &rarr; your name &rarr; Subscriptions</strong>.</p>
-<p><strong>Refunds.</strong> All payments are handled by Apple, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot see or change your payment. <strong>Restore.</strong> On a new iPhone, open Dashie &rarr; Settings &rarr; Pro and choose Restore, signed in with the same Apple Account.</p>
+<p><strong>Refunds.</strong> All payments are handled by Apple, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot see or change your payment. <strong>Restore.</strong> On a new iPhone, open Dashie &rarr; <strong>Settings</strong> &rarr; <strong>Restore purchases</strong>, signed in with the same Apple Account.</p>
 
 <h2>Where is my data?</h2>
-<p>Your name, photos and plate stay on your iPhone. See the <a href="privacy.html">Privacy Policy</a>.</p>
+<p>Your name, photos and plate stay on your iPhone. Dashie reads its shortcut files from Apple's iCloud (a read-only public database; it needs no account and sends nothing about you), and keeps a short technical log of its last 12 runs on your iPhone only. See the <a href="privacy.html">Privacy Policy</a>.</p>
 <p class="note">Dashie is an independent app and does not belong to any car maker. CarPlay and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</p>
 </section>
 
@@ -86,29 +98,41 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Soru, hata ya da fikir için: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. 48 saat içinde yanıtlıyoruz. Arabanda bir şey çalışmıyorsa lütfen araç marka ve modelini, CarPlay'in kablolu mu kablosuz mu olduğunu ve iOS sürümünü yaz.</p>
 
 <h2>Karşılama sesini kurma</h2>
-<p>Dashie <strong>iOS 27</strong> ister. Karşılamayı, CarPlay otomasyonu içeren hazır bir Dashie kestirmesi çalar. Dashie'nin kurulum rehberi seni üç adımda götürür; <strong>Test et</strong> düğmesi sesi hemen çalar, böylece kontrol edebilirsin. Adımlar burada da dursun:</p>
+<p>Dashie <strong>iOS 27</strong> ister. Karşılamayı, CarPlay otomasyonu içeren bir Dashie kestirmesi çalar; Dashie bu kestirmeyi sana dosya olarak verir. Dashie'nin kurulum rehberi (<strong>Kur ve doğrula</strong>) seni üç adımda götürür; <strong>Test et</strong> düğmesi sesi hemen çalar, böylece kontrol edebilirsin. Adımlar burada da dursun:</p>
 <div class="card">
 <ol>
-<li><strong>Kestirmeyi ekle.</strong> iPhone'unda <a href="https://www.icloud.com/shortcuts/9a5451186709457485336b09ea9415b1">Dashie kestirmesini</a> aç (ya da Dashie'nin kurulum rehberinde <strong>Ekle</strong>'ye dokun). Kestirmeler açılır; <strong>Kestirme Ekle</strong>'ye dokun. Zaten eklediysen yeniden ekleme; yoksa ikinci bir kopya oluşur.</li>
-<li><strong>Otomasyonu aç.</strong> Kestirmeler'de <strong>Dashie</strong> kestirmesini aç, <strong>CarPlay</strong> satırındaki oka dokun ve <strong>Otomasyon</strong> anahtarını aç.</li>
+<li><strong>Kestirmeyi ekle.</strong> Kurulum rehberinde <strong>Ekle</strong>'ye dokun. Açılan sayfada <strong>Kestirmeler</strong>'i seç, sonra <strong>Kestirme Ekle</strong>'ye dokun. Kestirme uygulama dilinde adlanır, örneğin <strong>Dashie Bağlanınca</strong>. Zaten eklediysen ikinci kez ekleme; yoksa iki kopya olur. Sonradan sildiysen kurulum rehberini yeniden aç: düğme artık <strong>Yeniden ekle</strong> yazar.</li>
+<li><strong>Otomasyonu aç, sonra bir kez çalıştır.</strong> <strong>Aç</strong>'a dokun (ya da kestirmeyi Kestirmeler'de aç). <strong>CarPlay</strong> satırında (&ldquo;CarPlay Bağlıyken&rdquo;) oka dokun ve <strong>Otomasyon</strong>'u aç. Sonra kestirmeyi bir kez &#9654; ile çalıştır ve iOS sorunca Dashie'nin eylemlerini çalıştırmasına izin ver.</li>
 <li><strong>Widget'ı ekle.</strong> iPhone'unda <strong>Ayarlar &rsaquo; Genel &rsaquo; CarPlay &rsaquo; araban &rsaquo; Araç Takımları &rsaquo; Araç Takımı Ekle</strong> yolunu izle ve <strong>Dashie A</strong>'yı (ya da kaydettiğin yuvayı) seç.</li>
 </ol>
-<p class="note">Bağlantı açılmadı mı? Kestirmeler'de <strong>+</strong>'ya, sonra <strong>Otomasyon</strong> çipine dokun; <strong>CarPlay</strong> ara ve seç; <strong>Dashie</strong> &rarr; <strong>Sürüş Sesini Çal</strong> eylemini <strong>CarPlay bağlanınca</strong> olayıyla ekle ve kestirmenin adını "Dashie" yap. İsteğe bağlı (Pro): veda ya da varış sesi için aynı yolla ayrı bir otomasyon kur; olay <strong>CarPlay ayrılınca</strong> ya da Kestirmeler'in <strong>Vardığımda</strong> tetikleyicisiyle <strong>Eve varınca</strong>. Her olayda hangi sesin çalacağını Kestirmeler'de değil, Dashie'nin içinde seçersin.</p>
+<p class="note">Kestirme eklenmedi mi? Birinci adımın altında <strong>Elle kur</strong>'u seç: Kestirmeler'de <strong>+</strong>'ya, sonra <strong>Otomasyon</strong> çipine dokun; <strong>CarPlay</strong> ara ve seç; <strong>Dashie</strong> &rarr; <strong>Sürüş Sesini Çal</strong> eylemini <strong>CarPlay bağlanınca</strong> olayıyla ekle ve kestirmenin adını "Dashie Bağlanınca" yap. Her an için hangi sesin çalacağını Kestirmeler'de değil, Dashie'nin içinde seçersin.</p>
 </div>
+
+<h2>Veda ve varış sesleri (Pro)</h2>
+<p>Dashie &rsaquo; <strong>Sesler</strong>'de <strong>Ayrılınca</strong> ya da <strong>Eve varınca</strong> için bir ses seç. <strong>Bu olay için kestirme</strong> kartı aynı iki adımı gösterir: kestirmeyi ekle (<strong>Dashie Ayrılınca</strong> ya da <strong>Dashie Eve varınca</strong>), aç, <strong>Otomasyon</strong>'u aç ve &#9654; ile bir kez çalıştır. <strong>Eve varınca</strong> için kestirmeyi açınca konumunu seç. Kurulumu baştan başlatırsan (<strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong> &rsaquo; <strong>Baştan başla</strong>) Dashie hangi adımları bitirdiğini unutur; seslerin ve ayarların kalır.</p>
 
 <h2>Ses arabada çalmadı</h2>
 <ol>
 <li>Dashie'yi aç ve <strong>Test et</strong>'e dokun. Sesi duyuyorsan ses motoru çalışıyordur; sorun otomasyonda ya da arabadadır.</li>
-<li>Kestirmeler'de <strong>Dashie</strong> kestirmesini aç; tetikleyicinin <strong>CarPlay</strong> olduğunu (Bluetooth değil), <strong>CarPlay</strong> satırında <strong>Otomasyon</strong>'un açık olduğunu ve Dashie eylemindeki olayın <strong>CarPlay bağlanınca</strong> olduğunu kontrol et.</li>
-<li>Dashie'de o olay için seçtiğin sese bak. Pro olmadan yalnızca adınla karşılama çalar, o da yalnızca CarPlay bağlandığında.</li>
+<li>Kestirmeler'de Dashie kestirmesini aç; tetikleyicinin <strong>CarPlay</strong> olduğunu (Bluetooth değil) ve <strong>Otomasyon</strong>'un açık olduğunu kontrol et (<strong>CarPlay</strong> satırındaki oka dokun). Bir kez &#9654; ile çalıştır: çalıştırmadıysan iOS Dashie'nin eylemleri için iznini hâlâ bekliyor olabilir.</li>
+<li>Kestirmeyi sildiysen Dashie &rsaquo; <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>'ı aç ve <strong>Yeniden ekle</strong>'ye dokun.</li>
+<li>Dashie'de o an için seçtiğin sese bak. Pro olmadan yalnızca adınla karşılama çalar, o da yalnızca CarPlay bağlandığında.</li>
 <li>Arabanın ses düzeyini aç. Ses iPhone'undan arabanın ses sistemi üzerinden çalar; araç CarPlay kaynağında olmalı.</li>
-<li>Kablosuz CarPlay'de ses yolunun hazır olması birkaç saniye sürebilir; ses ekran gelir gelmez değil, biraz sonra başlayabilir. Araban aynı anda kendi müziğini ya da zilini başlatıyorsa ikisi üst üste binebilir.</li>
+<li>Kablosuz CarPlay'de ses yolunun hazır olması biraz sürebilir. CarPlay bağlanınca Dashie arabanın sesini en çok 2 saniye bekler ve sesi kısa bir sessiz ön payla başlatır; bu yüzden sesi ekran geldikten yaklaşık iki saniye sonra duyabilirsin. Arabanın sesi zamanında hazır olmazsa karşılama iPhone'un hoparlöründen çalar. Araban aynı anda kendi müziğini ya da zilini başlatıyorsa ikisi üst üste binebilir.</li>
 <li>iPhone'unu bir kez yeniden başlat ve iOS'un güncel olduğundan emin ol.</li>
 </ol>
 <p>Hâlâ olmadıysa İletişim bölümündeki bilgilerle bize yaz.</p>
 
 <h2>Veda sesi telefonumdan çalmıyor</h2>
-<p>Araba kapanınca çalacak araç hoparlörü kalmaz; ses ancak iPhone'un kendi hoparlöründen gelebilir. Seni kalabalıkta şaşırtmamak için Dashie, sen izin vermedikçe telefonun kendi hoparlöründe sessiz kalır: Dashie &rarr; <strong>Ayarlar</strong>'ı aç ve <strong>Telefon hoparlöründen çal</strong>'ı aç. CarPlay bağlandığındaki karşılama bundan etkilenmez; arabanın ses sisteminden çalar.</p>
+<p>Araba kapanınca çalacak araç hoparlörü kalmaz; <strong>Ayrılınca</strong> ve <strong>Eve varınca</strong> sesleri ancak iPhone'un kendi hoparlöründen gelebilir. Bunlardan birine ilk kez ses bağladığında Dashie <strong>Telefon hoparlöründen de çal</strong>'ı senin için açar. Kendin kapattıysan araba bağlı değilken bu sesler sessiz kalır: Dashie &rarr; <strong>Ayarlar</strong>'ı aç ve yeniden aç. CarPlay bağlandığındaki karşılama arabanın ses sisteminden çalar.</p>
+
+<h2>Sürüş kartı (Canlı Etkinlik)</h2>
+<p>Dashie kestirmesi CarPlay bağlanırken çalıştığında Dashie ayrıca bir Canlı Etkinlik başlatır: arabanı ve karşılamayı gösteren bir kart. iOS onu Kilit Ekranı'nda ve Dynamic Island'da gösterir, CarPlay Dashboard'da da gösterebilir. <strong>Ayrılınca</strong> kestirmen çalışınca (Pro bir ses) ya da en geç 8 saat sonra biter; o kestirme yoksa kart 8 saat dolana ya da sonraki bağlantı yenisini başlatana kadar durur.</p>
+<ul>
+<li>İlk seferde iOS, Kilit Ekranı'nda kartın altında Dashie'nin Canlı Etkinliklerine izin verip vermeyeceğini sorar. <strong>İzin Ver</strong>'i seç; sonra yeniden sorarsa <strong>Her Zaman İzin Ver</strong>'i seç.</li>
+<li>Kart yok mu? iPhone'unda <strong>Ayarlar &rsaquo; Dashie &rsaquo; Canlı Etkinlikler</strong>'e bak.</li>
+<li>Kartta yalnızca arabanın ve karşılama var. Hiçbir yere bir şey göndermez.</li>
+</ul>
 
 <h2>Widget'ım araç ekranında görünmüyor</h2>
 <ul>
@@ -122,10 +146,10 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <h2>Pro, ücretsiz deneme, iade</h2>
 <p><strong>Neler ücretsiz?</strong> Her şeyi önizleyebilirsin: her sesi dinle, her şablonu aç, kendi arabanla tasarla. Adınla karşılama süre sınırı olmadan ücretsizdir. Dashie Pro ile widget kaydeder ve eklersin, her an için istediğin sesi kullanır, sesleri karıştırır ve kendi dosyanı eklersin.</p>
 <p><strong>Fiyat ve deneme.</strong> Yıllık plan 3 günlük ücretsiz deneme içerir; ömür boyu seçeneği tek seferlik ödemedir. Haftalık plan yoktur. Kendi para biriminde fiyat, onaylamadan önce gösterilir. Ücret çekilmesin diye deneme ya da dönem bitmeden en az 24 saat önce iptal et: <strong>Ayarlar &rarr; adın &rarr; Abonelikler</strong>.</p>
-<p><strong>İade.</strong> Bütün ödemeleri Apple işler; iade Apple'dan istenir: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Ödemeni göremeyiz ve değiştiremeyiz. <strong>Geri yükleme.</strong> Yeni iPhone'da aynı Apple Hesabıyla giriş yapıp Dashie &rarr; Ayarlar &rarr; Pro'dan Geri Yükle'yi seç.</p>
+<p><strong>İade.</strong> Bütün ödemeleri Apple işler; iade Apple'dan istenir: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Ödemeni göremeyiz ve değiştiremeyiz. <strong>Geri yükleme.</strong> Yeni iPhone'da aynı Apple Hesabıyla giriş yapıp Dashie &rarr; <strong>Ayarlar</strong> &rarr; <strong>Satın alımları geri yükle</strong>'yi seç.</p>
 
 <h2>Verilerim nerede?</h2>
-<p>Adın, fotoğrafların ve plakan iPhone'unda kalır. Bkz. <a href="privacy.html">Gizlilik Politikası</a>.</p>
+<p>Adın, fotoğrafların ve plakan iPhone'unda kalır. Dashie kestirme dosyalarını Apple'ın iCloud'undan okur (salt okunur herkese açık bir veritabanı; hesap istemez ve senin hakkında hiçbir şey göndermez) ve son 12 çalışmasının kısa teknik kaydını yalnızca iPhone'unda tutar. Bkz. <a href="privacy.html">Gizlilik Politikası</a>.</p>
 <p class="note">Dashie bağımsız bir uygulamadır ve hiçbir otomobil üreticisine ait değildir. CarPlay ve iPhone, Apple Inc.'in ABD'de ve diğer ülkelerde ve bölgelerde tescilli ticari markalarıdır.</p>
 </section>
 
