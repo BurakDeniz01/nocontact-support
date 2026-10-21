@@ -34,35 +34,42 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Questions, bugs or ideas: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. We answer within 48 hours. If something does not work in your car, please include your car make and model, whether CarPlay is wired or wireless, and your iOS version.</p>
 
 <h2>Setting up the drive card</h2>
-<p>Dashie needs <strong>iOS 27</strong>. The drive card is started by two Dashie shortcuts that each carry a CarPlay automation, and Dashie hands you both as files. Dashie's setup guide (<strong>Set up and check</strong>) takes you through three steps; the third is optional. The steps, in case you want them here:</p>
+<p>Dashie needs <strong>iOS 27</strong>. Setup takes about 2 minutes and needs no car.</p>
+<p><strong>Try it on your iPhone first.</strong> On the screen after you type your name, tap <strong>Try the card now</strong> and lock your iPhone: the card greets you for 8 seconds, then shows the timer, and goes away after 2 minutes. Already past that screen? Use <strong>Try</strong> in step 2 below.</p>
+<p>In the car, the drive card is started by one Dashie shortcut that carries a CarPlay automation; Dashie hands it to you as a file. A second shortcut, for when CarPlay disconnects, is optional. Dashie's setup guide (<strong>Set up and check</strong>) takes you through three steps; the third is optional. The steps, in case you want them here:</p>
 <div class="card">
 <ol>
-<li><strong>Add the two shortcuts.</strong> In the setup guide tap <strong>Add</strong> on <strong>Connects</strong>, then on <strong>Disconnects</strong>. In the sheet that opens, pick <strong>Shortcuts</strong>, then tap <strong>Add Shortcut</strong>. The shortcuts are named in your app language, for example <strong>Dashie Connects</strong> and <strong>Dashie Disconnects</strong>. Already added one? Don't add it a second time, or you get two copies. Deleted one later? Reopen the setup guide: its button now reads <strong>Add again</strong>.</li>
-<li><strong>Turn on each automation, then run it once.</strong> Tap <strong>Open</strong> (or open the shortcut in Shortcuts). On the <strong>CarPlay</strong> row tap the arrow and turn on <strong>Automation</strong>. Then tap &#9654; once to run the shortcut and, when iOS asks, allow Dashie to run its actions. Do this for both shortcuts.</li>
+<li><strong>Add the shortcut.</strong> In the setup guide tap <strong>Add</strong> on <strong>Connects</strong>. In the sheet that opens, pick <strong>Shortcuts</strong>, then tap <strong>Add Shortcut</strong>. Back in Dashie, tap <strong>Added</strong>. The shortcut is named in your app language, for example <strong>Dashie Connects</strong>. <strong>Disconnects</strong> is marked <strong>Optional</strong>: add it the same way if you want the card to show your drive time when you leave. Already added one? Don't add it a second time, or you get two copies. Deleted one later? Reopen the setup guide and tap it to add it again.</li>
+<li><strong>Turn on the automation and try it.</strong> Tap <strong>Open</strong> (or open the shortcut in Shortcuts). On the <strong>CarPlay</strong> row tap the arrow and turn on <strong>Automation</strong>, then come back and tap <strong>It's on</strong>. Tap <strong>Try</strong> to run the shortcut once: the first time, Shortcuts asks you to allow Dashie's actions, and the card appears on your Lock Screen. If you added <strong>Disconnects</strong>, do the same for it.</li>
 <li><strong>Optional: add the widget.</strong> On your iPhone, go to <strong>Settings &rsaquo; General &rsaquo; CarPlay &rsaquo; your car &rsaquo; Widgets &rsaquo; Add Widget</strong> and choose <strong>Dashie A</strong> (or the slot you saved). The drive card does not need it.</li>
 </ol>
-<p class="note">Shortcut not added? Under the first step choose <strong>Set it up by hand</strong>: in Shortcuts tap <strong>+</strong>, then the <strong>Automation</strong> chip; search <strong>CarPlay</strong> and pick it; search <strong>Dashie</strong> and add its drive card action with the event <strong>CarPlay connects</strong> (for the second shortcut, the CarPlay trigger <strong>Disconnects</strong> and the event <strong>CarPlay disconnects</strong>), and rename the shortcut "Dashie Connects" (or "Dashie Disconnects").</p>
+<p class="note">Shortcut not added? Under the first step choose <strong>Set it up by hand</strong>: in Shortcuts tap <strong>+</strong>, then the <strong>Automation</strong> chip; search <strong>CarPlay</strong> and pick it; search <strong>Dashie</strong> and add its drive card action with the event <strong>CarPlay connects</strong>, and rename the shortcut "Dashie Connects". For the optional second shortcut, choose <strong>Disconnects</strong> on the CarPlay trigger and the event <strong>CarPlay disconnects</strong>, and name it "Dashie Disconnects".</p>
 </div>
-<p class="note"><strong>Tip:</strong> without the <strong>Disconnects</strong> shortcut the drive timer does not stop when you leave the car. Add both.</p>
+<p class="note">When both steps are done, the Garage shows <strong>Awaiting first drive</strong>; once the card has come on a real drive, it shows <strong>Ready</strong>. In a hurry? Tap <strong>Skip for now</strong> and finish the rest later from the Garage or <strong>Settings &rsaquo; Reopen setup</strong>.</p>
 
 <h2>The drive card (Live Activity)</h2>
-<p>When the <strong>Connects</strong> shortcut runs as CarPlay connects, Dashie starts a Live Activity: a card with your car and a greeting by name. After 8 seconds it becomes a drive timer. iOS shows it on the Lock Screen and in the Dynamic Island, and can show it on the CarPlay screen. When the <strong>Disconnects</strong> shortcut runs, the card shows how long you drove and goes away after 2 minutes. A card also ends after 8 hours at most, and the next connection starts a new one.</p>
+<p>When the <strong>Connects</strong> shortcut runs as CarPlay connects, Dashie starts a Live Activity: a card with your car and a greeting by name. After 8 seconds it becomes a drive timer. iOS shows it on the Lock Screen and in the Dynamic Island, and can show it on the CarPlay screen.</p>
+<p><strong>With the optional Disconnects shortcut</strong>, the card shows how long you drove when CarPlay disconnects and goes away 2 minutes later. <strong>Without it</strong>, the timer stops 3 hours after you connect and the card shows <strong>Until the next drive</strong>; it goes away when you open Dashie or connect again. A card ends after 8 hours at most, and the next connection starts a new one. The card you try on your iPhone always goes away after 2 minutes.</p>
 <ul>
 <li>The first time, iOS asks under the card on the Lock Screen whether to allow Live Activities from Dashie. Choose <strong>Allow</strong>; if it asks again later, choose <strong>Always Allow</strong>.</li>
 <li>No card? Check <strong>Settings &rsaquo; Dashie &rsaquo; Live Activities</strong> on your iPhone.</li>
 <li>The card holds only your car, your name and the time. It sends nothing anywhere.</li>
+<li>No <strong>Disconnects</strong> shortcut yet? After your first drive, the Garage offers it: <strong>Want a goodbye when you leave?</strong></li>
 </ul>
 
 <h2>The card did not appear in my car</h2>
 <ol>
-<li>Try it without the car: in Shortcuts run <strong>Dashie Connects</strong> with &#9654;. The card should appear on your Lock Screen. If it does, Dashie works and the problem is the automation or the car.</li>
-<li>In Shortcuts, open the Dashie shortcut and check that its trigger is <strong>CarPlay</strong> (not Bluetooth) and that <strong>Automation</strong> is on (tap the arrow on the <strong>CarPlay</strong> row). Run it once with &#9654;: until you have, iOS may still be waiting for your permission for Dashie's actions.</li>
-<li>Deleted a shortcut? Open Dashie &rsaquo; <strong>Settings &rsaquo; Reopen setup</strong> and tap <strong>Add again</strong>.</li>
+<li>Try it without the car: in Dashie's setup guide tap <strong>Try</strong>, or in Shortcuts run <strong>Dashie Connects</strong> with &#9654;. The card should appear on your Lock Screen. If it does, Dashie works and the problem is the automation or the car. If Dashie says <strong>Shortcut not found</strong>, add it again in step 1.</li>
+<li>In Shortcuts, open the Dashie shortcut and check that its trigger is <strong>CarPlay</strong> (not Bluetooth) and that <strong>Automation</strong> is on (tap the arrow on the <strong>CarPlay</strong> row). Run it once with <strong>Try</strong> (or &#9654;): until you have, iOS may still be waiting for your permission for Dashie's actions.</li>
+<li>Deleted a shortcut? Open Dashie &rsaquo; <strong>Settings &rsaquo; Reopen setup</strong> and add it again in step 1.</li>
 <li>Check that Live Activities are allowed: <strong>Settings &rsaquo; Dashie &rsaquo; Live Activities</strong>.</li>
 <li>iOS decides where a Live Activity appears. If you do not see it on the car screen, look at the Lock Screen and the Dynamic Island, and check the car's CarPlay settings.</li>
 <li>Restart your iPhone once and make sure it runs the latest iOS update.</li>
 </ol>
 <p>Still stuck? Email us with the details from the Contact section.</p>
+
+<h2>The card stays after I leave the car</h2>
+<p>Without the optional <strong>Disconnects</strong> shortcut, Dashie cannot tell when you leave. The timer stops 3 hours after you connect and the card shows <strong>Until the next drive</strong>; it goes away when you open Dashie or connect again. For a goodbye with your drive time, add <strong>Disconnects</strong>: Dashie &rsaquo; <strong>Settings &rsaquo; Reopen setup</strong>, step 1.</p>
 
 <h2>Starting over</h2>
 <p>If the setup steps got mixed up, open Dashie &rsaquo; <strong>Settings &rsaquo; Reopen setup</strong> and tap <strong>Start over</strong>. Dashie forgets which steps you finished; your designs and settings stay.</p>
@@ -77,7 +84,7 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 </ul>
 
 <h2>Pro, the free trial, refunds</h2>
-<p><strong>What is free?</strong> Everything can be previewed: open every template, design with your own car, try every paint. The Garage and the drive card are free. Dashie Pro lets you save and add widgets and keep the other five paint colors; silver is free.</p>
+<p><strong>What is free?</strong> Try everything before you pay: open every template, design with your own car, try every paint. Free: the drive card, the Garage, silver paint and one saved widget. Dashie Pro opens all 3 widget slots (Dashie A, B and C), so you can save three designs, and the five other paint colors. Two widgets side by side that share one design use two slots, so they need Pro. If Pro ends, your saved widgets stay.</p>
 <p><strong>Price and trial.</strong> The yearly plan includes a 3-day free trial; the lifetime option is a single payment. There are no weekly plans. The price in your currency is shown before you confirm. To avoid being charged, cancel at least 24 hours before the trial or the period ends: <strong>Settings &rarr; your name &rarr; Subscriptions</strong>.</p>
 <p><strong>Refunds.</strong> All payments are handled by Apple, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot see or change your payment. <strong>Restore.</strong> On a new iPhone, open Dashie &rarr; <strong>Settings</strong> &rarr; <strong>Restore purchases</strong>, signed in with the same Apple Account.</p>
 
@@ -95,35 +102,42 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 <p>Soru, hata ya da fikir için: <a href="mailto:z.burakdeniz@gmail.com">z.burakdeniz@gmail.com</a>. 48 saat içinde yanıtlıyoruz. Arabanda bir şey çalışmıyorsa lütfen araç marka ve modelini, CarPlay'in kablolu mu kablosuz mu olduğunu ve iOS sürümünü yaz.</p>
 
 <h2>Sürüş kartını kurma</h2>
-<p>Dashie <strong>iOS 27</strong> ister. Sürüş kartını, her biri bir CarPlay otomasyonu taşıyan iki Dashie kestirmesi başlatır; Dashie ikisini de sana dosya olarak verir. Dashie'nin kurulum rehberi (<strong>Kur ve doğrula</strong>) seni üç adımda götürür; üçüncüsü isteğe bağlıdır. Adımlar burada da dursun:</p>
+<p>Dashie <strong>iOS 27</strong> ister. Kurulum yaklaşık 2 dakika sürer ve araba gerekmez.</p>
+<p><strong>Önce iPhone'unda dene.</strong> Adını yazdıktan sonraki ekranda <strong>Kartı şimdi dene</strong>'ye dokun ve iPhone'unu kilitle: kart 8 saniye seni karşılar, sonra sayaca döner ve 2 dakika sonra kapanır. O ekranı geçtin mi? Aşağıdaki 2. adımdaki <strong>Dene</strong>'yi kullan.</p>
+<p>Arabada sürüş kartını, CarPlay otomasyonu taşıyan tek bir Dashie kestirmesi başlatır; Dashie onu sana dosya olarak verir. CarPlay ayrılınca çalışan ikinci kestirme isteğe bağlıdır. Dashie'nin kurulum rehberi (<strong>Kur ve doğrula</strong>) seni üç adımda götürür; üçüncüsü isteğe bağlıdır. Adımlar burada da dursun:</p>
 <div class="card">
 <ol>
-<li><strong>İki kestirmeyi ekle.</strong> Kurulum rehberinde önce <strong>Bağlanınca</strong>'da, sonra <strong>Ayrılınca</strong>'da <strong>Ekle</strong>'ye dokun. Açılan sayfada <strong>Kestirmeler</strong>'i seç, sonra <strong>Kestirme Ekle</strong>'ye dokun. Kestirmeler uygulama dilinde adlanır, örneğin <strong>Dashie Bağlanınca</strong> ve <strong>Dashie Ayrılınca</strong>. Birini zaten eklediysen ikinci kez ekleme; yoksa iki kopya olur. Sonradan birini sildiysen kurulum rehberini yeniden aç: düğme artık <strong>Yeniden ekle</strong> yazar.</li>
-<li><strong>Her otomasyonu aç, sonra bir kez çalıştır.</strong> <strong>Aç</strong>'a dokun (ya da kestirmeyi Kestirmeler'de aç). <strong>CarPlay</strong> satırında oka dokun ve <strong>Otomasyon</strong>'u aç. Sonra kestirmeyi bir kez &#9654; ile çalıştır ve iOS sorunca Dashie'nin eylemlerini çalıştırmasına izin ver. Bunu iki kestirme için de yap.</li>
+<li><strong>Kestirmeyi ekle.</strong> Kurulum rehberinde <strong>Bağlanınca</strong>'da <strong>Ekle</strong>'ye dokun. Açılan sayfada <strong>Kestirmeler</strong>'i seç, sonra <strong>Kestirme Ekle</strong>'ye dokun. Dashie'ye dönünce <strong>Ekledim</strong>'e dokun. Kestirme uygulama dilinde adlanır, örneğin <strong>Dashie Bağlanınca</strong>. <strong>Ayrılınca</strong>'nın yanında <strong>İsteğe bağlı</strong> yazar: arabadan inince kartın sürüş süreni göstermesini istersen onu da aynı yolla ekle. Birini zaten eklediysen ikinci kez ekleme; yoksa iki kopya olur. Sonradan birini sildiysen kurulum rehberini yeniden aç, ona dokunup yeniden ekle.</li>
+<li><strong>Otomasyonu aç ve dene.</strong> <strong>Aç</strong>'a dokun (ya da kestirmeyi Kestirmeler'de aç). <strong>CarPlay</strong> satırında oka dokun ve <strong>Otomasyon</strong>'u aç; Dashie'ye dönüp <strong>Açtım</strong>'a dokun. Kestirmeyi bir kez çalıştırmak için <strong>Dene</strong>'ye dokun: Kestirmeler ilk seferde Dashie'nin eylemleri için izin ister, kart Kilit Ekranı'nda belirir. <strong>Ayrılınca</strong>'yı eklediysen onun için de aynısını yap.</li>
 <li><strong>İsteğe bağlı: widget'ı ekle.</strong> iPhone'unda <strong>Ayarlar &rsaquo; Genel &rsaquo; CarPlay &rsaquo; araban &rsaquo; Araç Takımları &rsaquo; Araç Takımı Ekle</strong> yolunu izle ve <strong>Dashie A</strong>'yı (ya da kaydettiğin yuvayı) seç. Sürüş kartı buna ihtiyaç duymaz.</li>
 </ol>
-<p class="note">Kestirme eklenmedi mi? Birinci adımın altında <strong>Elle kur</strong>'u seç: Kestirmeler'de <strong>+</strong>'ya, sonra <strong>Otomasyon</strong> çipine dokun; <strong>CarPlay</strong> ara ve seç; <strong>Dashie</strong> ara ve sürüş kartı eylemini <strong>CarPlay bağlanınca</strong> olayıyla ekle (ikinci kestirme için CarPlay tetikleyicisinde <strong>Ayrılınca</strong>'yı ve <strong>CarPlay ayrılınca</strong> olayını seç) ve kestirmenin adını "Dashie Bağlanınca" (ya da "Dashie Ayrılınca") yap.</p>
+<p class="note">Kestirme eklenmedi mi? Birinci adımın altında <strong>Elle kur</strong>'u seç: Kestirmeler'de <strong>+</strong>'ya, sonra <strong>Otomasyon</strong> çipine dokun; <strong>CarPlay</strong> ara ve seç; <strong>Dashie</strong> ara ve sürüş kartı eylemini <strong>CarPlay bağlanınca</strong> olayıyla ekle, kestirmenin adını "Dashie Bağlanınca" yap. İsteğe bağlı ikinci kestirme için CarPlay tetikleyicisinde <strong>Bağlantı Kesildiğinde</strong>'yi ve <strong>CarPlay ayrılınca</strong> olayını seç, adını "Dashie Ayrılınca" yap.</p>
 </div>
-<p class="note"><strong>İpucu:</strong> <strong>Ayrılınca</strong> kestirmesi yoksa arabadan inince sürüş sayacı durmaz. İkisini de ekle.</p>
+<p class="note">İki adım bitince Garaj'da <strong>İlk sürüşü bekliyor</strong> yazar; kart gerçek bir sürüşte geldikten sonra <strong>Hazır</strong> yazar. Acelen mi var? <strong>Şimdilik geç</strong>'e dokun, kalanını sonra Garaj'dan ya da <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>'tan bitir.</p>
 
 <h2>Sürüş kartı (Canlı Etkinlik)</h2>
-<p><strong>Bağlanınca</strong> kestirmesi CarPlay bağlanırken çalıştığında Dashie bir Canlı Etkinlik başlatır: arabanı ve adınla bir karşılamayı gösteren bir kart. 8 saniye sonra sürüş sayacına dönüşür. iOS onu Kilit Ekranı'nda ve Dynamic Island'da gösterir, CarPlay ekranında da gösterebilir. <strong>Ayrılınca</strong> kestirmesi çalışınca kart ne kadar sürdüğünü gösterir ve 2 dakika sonra kapanır. Kart en geç 8 saat sonra da biter; sonraki bağlantı yenisini başlatır.</p>
+<p><strong>Bağlanınca</strong> kestirmesi CarPlay bağlanırken çalıştığında Dashie bir Canlı Etkinlik başlatır: arabanı ve adınla bir karşılamayı gösteren bir kart. 8 saniye sonra sürüş sayacına dönüşür. iOS onu Kilit Ekranı'nda ve Dynamic Island'da gösterir, CarPlay ekranında da gösterebilir.</p>
+<p><strong>İsteğe bağlı Ayrılınca kestirmesi varsa</strong> kart, CarPlay ayrılınca ne kadar sürdüğünü gösterir ve 2 dakika sonra kapanır. <strong>Yoksa</strong> sayaç bağlanıştan 3 saat sonra durur ve kartta <strong>Bir sonraki sürüşe kadar</strong> yazar; kart Dashie'yi açınca ya da yeniden bağlanınca kapanır. Kart en geç 8 saat sonra biter; sonraki bağlantı yenisini başlatır. iPhone'unda denediğin kart her zaman 2 dakika sonra kapanır.</p>
 <ul>
 <li>İlk seferde iOS, Kilit Ekranı'nda kartın altında Dashie'nin Canlı Etkinliklerine izin verip vermeyeceğini sorar. <strong>İzin Ver</strong>'i seç; sonra yeniden sorarsa <strong>Her Zaman İzin Ver</strong>'i seç.</li>
 <li>Kart yok mu? iPhone'unda <strong>Ayarlar &rsaquo; Dashie &rsaquo; Canlı Etkinlikler</strong>'e bak.</li>
 <li>Kartta yalnızca arabanın, adın ve süre var. Hiçbir yere bir şey göndermez.</li>
+<li>Henüz <strong>Ayrılınca</strong> kestirmen yok mu? İlk sürüşünden sonra Garaj onu önerir: <strong>Ayrılırken veda etsin mi?</strong></li>
 </ul>
 
 <h2>Kart arabamda görünmedi</h2>
 <ol>
-<li>Arabasız dene: Kestirmeler'de <strong>Dashie Bağlanınca</strong>'yı &#9654; ile çalıştır. Kart Kilit Ekranı'nda görünmeli. Görünüyorsa Dashie çalışıyordur; sorun otomasyonda ya da arabadadır.</li>
-<li>Kestirmeler'de Dashie kestirmesini aç; tetikleyicinin <strong>CarPlay</strong> olduğunu (Bluetooth değil) ve <strong>Otomasyon</strong>'un açık olduğunu kontrol et (<strong>CarPlay</strong> satırındaki oka dokun). Bir kez &#9654; ile çalıştır: çalıştırmadıysan iOS Dashie'nin eylemleri için iznini hâlâ bekliyor olabilir.</li>
-<li>Bir kestirmeyi sildiysen Dashie &rsaquo; <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>'ı aç ve <strong>Yeniden ekle</strong>'ye dokun.</li>
+<li>Arabasız dene: Dashie'nin kurulum rehberinde <strong>Dene</strong>'ye dokun ya da Kestirmeler'de <strong>Dashie Bağlanınca</strong>'yı &#9654; ile çalıştır. Kart Kilit Ekranı'nda görünmeli. Görünüyorsa Dashie çalışıyordur; sorun otomasyonda ya da arabadadır. Dashie <strong>Kestirme bulunamadı</strong> derse 1. adımdan yeniden ekle.</li>
+<li>Kestirmeler'de Dashie kestirmesini aç; tetikleyicinin <strong>CarPlay</strong> olduğunu (Bluetooth değil) ve <strong>Otomasyon</strong>'un açık olduğunu kontrol et (<strong>CarPlay</strong> satırındaki oka dokun). Bir kez <strong>Dene</strong> (ya da &#9654;) ile çalıştır: çalıştırmadıysan iOS Dashie'nin eylemleri için iznini hâlâ bekliyor olabilir.</li>
+<li>Bir kestirmeyi sildiysen Dashie &rsaquo; <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>'ı aç ve 1. adımdan yeniden ekle.</li>
 <li>Canlı Etkinliklere izin verildiğini kontrol et: <strong>Ayarlar &rsaquo; Dashie &rsaquo; Canlı Etkinlikler</strong>.</li>
 <li>Canlı Etkinliğin nerede görüneceğine iOS karar verir. Araç ekranında görmüyorsan Kilit Ekranı'na ve Dynamic Island'a bak, arabanın CarPlay ayarlarını da kontrol et.</li>
 <li>iPhone'unu bir kez yeniden başlat ve iOS'un güncel olduğundan emin ol.</li>
 </ol>
 <p>Hâlâ olmadıysa İletişim bölümündeki bilgilerle bize yaz.</p>
+
+<h2>Arabadan indikten sonra kart duruyor</h2>
+<p>İsteğe bağlı <strong>Ayrılınca</strong> kestirmesi yoksa Dashie arabadan indiğini bilemez. Sayaç bağlanıştan 3 saat sonra durur ve kartta <strong>Bir sonraki sürüşe kadar</strong> yazar; kart Dashie'yi açınca ya da yeniden bağlanınca kapanır. Sürüş süreni gösteren bir veda için <strong>Ayrılınca</strong>'yı ekle: Dashie &rsaquo; <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>, 1. adım.</p>
 
 <h2>Baştan başlama</h2>
 <p>Kurulum adımları birbirine karıştıysa Dashie &rsaquo; <strong>Ayarlar &rsaquo; Kurulumu tekrar aç</strong>'ı aç ve <strong>Baştan başla</strong>'ya dokun. Dashie hangi adımları bitirdiğini unutur; tasarımların ve ayarların kalır.</p>
@@ -138,7 +152,7 @@ kbd{font:inherit;font-weight:600;color:var(--ink)}
 </ul>
 
 <h2>Pro, ücretsiz deneme, iade</h2>
-<p><strong>Neler ücretsiz?</strong> Her şeyi önizleyebilirsin: her şablonu aç, kendi arabanla tasarla, her boyayı dene. Garaj ve sürüş kartı ücretsizdir. Dashie Pro ile widget kaydeder ve eklersin, diğer beş boya rengini de kullanırsın; gümüş ücretsizdir.</p>
+<p><strong>Neler ücretsiz?</strong> Ödemeden önce her şeyi dene: her şablonu aç, kendi arabanla tasarla, her boyayı dene. Ücretsiz: sürüş kartı, Garaj, gümüş boya ve kayıtlı bir widget. Dashie Pro, 3 widget yuvasının hepsini (Dashie A, B ve C) açar; üç tasarım kaydedersin. Diğer beş boya rengi de Pro'dadır. Tek tasarımı paylaşan yan yana iki widget iki yuva kullanır, bu yüzden Pro ister. Pro biterse kayıtlı widget'ların kalır.</p>
 <p><strong>Fiyat ve deneme.</strong> Yıllık plan 3 günlük ücretsiz deneme içerir; ömür boyu seçeneği tek seferlik ödemedir. Haftalık plan yoktur. Kendi para biriminde fiyat, onaylamadan önce gösterilir. Ücret çekilmesin diye deneme ya da dönem bitmeden en az 24 saat önce iptal et: <strong>Ayarlar &rarr; adın &rarr; Abonelikler</strong>.</p>
 <p><strong>İade.</strong> Bütün ödemeleri Apple işler; iade Apple'dan istenir: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Ödemeni göremeyiz ve değiştiremeyiz. <strong>Geri yükleme.</strong> Yeni iPhone'da aynı Apple Hesabıyla giriş yapıp Dashie &rarr; <strong>Ayarlar</strong> &rarr; <strong>Satın alımları geri yükle</strong>'yi seç.</p>
 
