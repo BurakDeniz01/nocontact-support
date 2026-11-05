@@ -19,19 +19,24 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">No Contact · Last updated 1 November 2026</p>
+    <p class="muted">No Contact · Last updated 6 November 2026</p>
+
+    <p>This policy covers the No Contact app for iOS and Android and, where available, its
+       widget.</p>
 
     <p>No Contact is built to be private. <strong>Your content</strong> &mdash; the reasons you type,
        journal entries, unsent letters and voice notes &mdash; stays on your device and is never
        sent to us or anyone else. We do not sell or share your personal data. Our paywall and
        purchase provider receives limited technical and purchase information, none of it linked to
-       your identity &mdash; see <a href="#purchases">Purchases</a>. Apart from that, the only thing
+       your identity, and your app store (Apple or Google) handles purchases &mdash; see
+       <a href="#purchases">Purchases</a>. Apart from that, the only thing
        that leaves the app is a link you can choose to tap &mdash; see
        <a href="#partners">Links to partners</a>.</p>
 
     <h2>What we store</h2>
-    <p>Your no-contact start date and your progress are stored <strong>only on your device</strong>
-       (and, for the widget, in a private app group on your device). The same goes for everything
+    <p>Your no-contact start date and your progress are stored <strong>only on your device</strong>.
+       On iPhone, the widget reads them from a private app group on your device; on Android, the
+       widget reads them from the app&rsquo;s own local data on your device. The same goes for everything
        you create in the app: the reasons you type during setup, journal entries, unsent letters
        and voice notes are stored <strong>only on your device</strong>. None of it is sent to us
        or any server.</p>
@@ -45,7 +50,8 @@
        whether you receive them.</p>
 
     <h2 id="on-device-ai">On-device AI</h2>
-    <p>Private reflections on your letters and &ldquo;Talk it through&rdquo; use Apple&rsquo;s
+    <p>On-device AI is available on iPhone only; the Android app does not include any AI
+       features. On iPhone, private reflections on your letters and &ldquo;Talk it through&rdquo; use Apple&rsquo;s
        on-device model, available on iOS 26 or later with Apple Intelligence turned on. What you
        write there is processed <strong>on your iPhone only</strong>. Conversations are not saved:
        they disappear when you close the screen. Nothing you write is sent to us, to Apple&rsquo;s
@@ -56,8 +62,9 @@
        Recordings are stored on your device and are never uploaded.</p>
 
     <h2 id="purchases">Purchases</h2>
-    <p>If you buy a subscription or the lifetime option, the transaction is processed by
-       <strong>Apple</strong>, and the paywall and purchase status are managed through
+    <p>If you buy a subscription or the lifetime option, the transaction is processed by your app
+       store: <strong>Apple</strong> (App Store) on iPhone, or <strong>Google</strong> (Google Play
+       Billing) on Android. On both platforms, the paywall and purchase status are managed through
        <strong>Superwall</strong>, our paywall provider. Superwall is set up when the app opens, so
        for every user it receives an anonymous device identifier and an app-assigned ID, and paywall
        interaction events
@@ -69,17 +76,30 @@
        for app functionality and analytics; it is not linked to your identity and not used for
        tracking. None of your content (reasons, journal, letters, voice notes) is ever sent.
        We never receive your payment details.</p>
+    <p><strong>On Android</strong>, the app also uses these Google Play components, which Google
+       operates under <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a>:</p>
+    <ul>
+      <li><strong>Google Play Billing</strong> processes purchases. Google may process purchase and
+          billing diagnostic data as part of this.</li>
+      <li><strong>Google Play Install Referrer</strong> tells the app which Play Store listing or
+          campaign it was installed from.</li>
+      <li><strong>Google Play In-App Review</strong> may show Google&rsquo;s rating prompt; any
+          rating or review you leave goes to Google, not to us.</li>
+      <li><strong>Google Play services</strong> provides the system services these components rely
+          on.</li>
+    </ul>
+    <p>The Android app has no advertising ID, analytics SDK or crash-reporting SDK of its own.</p>
 
     <h2 id="partners">Links to partners</h2>
     <p>The &ldquo;Right now&rdquo; screen ends with a link to Online-Therapy.com, an independent
        online therapy service. It is an advertisement: if you subscribe after following that link,
        we earn a commission. We are not affiliated with them beyond that, and they send us no
        information about you.</p>
-    <p>Nothing is sent anywhere unless you tap it. Tapping it opens Safari, not a browser inside
-       the app. From then on it is an ordinary web visit: the destination &mdash; and the
+    <p>Nothing is sent anywhere unless you tap it. Tapping it opens your browser (Safari on
+       iPhone, your default browser on Android), not a browser inside the app. From then on it is an ordinary web visit: the destination &mdash; and the
        click-tracking service that credits the referral (go.online-therapy.com) &mdash; will see
        your IP address, your browser&rsquo;s user agent and the time of the visit, and may set a
-       cookie in Safari so the referral can be attributed. That exchange is between you and them,
+       cookie in your browser so the referral can be attributed. That exchange is between you and them,
        governed by their privacy policy. The app does not send it, and never learns whether you
        subscribed or what you discuss with anyone.</p>
 
@@ -88,7 +108,7 @@
        <a href="https://findahelpline.com">findahelpline.com</a>, an independent directory of free
        helplines by country. It is not an advertisement and not a partner: we earn nothing from it
        and it sends us no information about you. Like the link above, nothing is sent unless you
-       tap it, and tapping opens Safari. From then on it is an ordinary web visit governed by that
+       tap it, and tapping opens your browser. From then on it is an ordinary web visit governed by that
        site&rsquo;s own privacy policy. The app never learns that you tapped it.</p>
 
     <h2>Analytics &amp; tracking</h2>
@@ -96,7 +116,8 @@
        networks or cross-app tracking; the app does not request tracking permission. The only usage
        and diagnostic data that leaves the app is the paywall interaction events, the optional
        post-purchase answer, approximate location and diagnostic data described under <a href="#purchases">Purchases</a>, which are
-       not linked to your identity. The only advertisement in the app is the partner link
+       not linked to your identity, and, on Android, the data Google&rsquo;s Play components
+       handle as described there. The only advertisement in the app is the partner link
        described above: it is a plain link, it loads no ad-network code, and it does nothing at all
        until you tap it.</p>
 
