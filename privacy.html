@@ -19,7 +19,7 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">No Contact · Last updated 6 November 2026</p>
+    <p class="muted">No Contact · Last updated 14 November 2026</p>
 
     <p>This policy covers the No Contact app for iOS and Android and, where available, its
        widget.</p>
@@ -27,9 +27,10 @@
     <p>No Contact is built to be private. <strong>Your content</strong> &mdash; the reasons you type,
        journal entries, unsent letters and voice notes &mdash; stays on your device and is never
        sent to us or anyone else. We do not sell or share your personal data. Our paywall and
-       purchase provider receives limited technical and purchase information, none of it linked to
-       your identity, and your app store (Apple or Google) handles purchases &mdash; see
-       <a href="#purchases">Purchases</a>. Apart from that, the only thing
+       purchase provider receives limited technical and purchase information and, on iPhone, Apple
+       Ads attribution information, none of it linked to your identity, and your app store (Apple
+       or Google) handles purchases &mdash; see <a href="#purchases">Purchases</a> and
+       <a href="#apple-ads">Apple Ads attribution</a>. Apart from that, the only thing
        that leaves the app is a link you can choose to tap &mdash; see
        <a href="#partners">Links to partners</a>.</p>
 
@@ -90,6 +91,18 @@
     </ul>
     <p>The Android app has no advertising ID, analytics SDK or crash-reporting SDK of its own.</p>
 
+    <h2 id="apple-ads">Apple Ads attribution</h2>
+    <p>On iPhone, the Superwall library in the app gets an attribution token on your device from
+       Apple&rsquo;s AdServices framework and sends it to Superwall. With it, Superwall learns whether
+       the install came from one of our ads on Apple Ads and, if so, details such as the campaign,
+       ad group and keyword, and the country or region. We use this only to
+       measure how our own ads perform. It is not linked to your identity, and it is not used to
+       track you across other apps or websites or to show you ads. Neither the token nor what
+       Superwall learns from it contains any of your content (reasons, journal entries, unsent
+       letters, voice notes or anything you write in &ldquo;Talk it through&rdquo;). In App Store
+       privacy terms this is advertising data <strong>not linked to your identity</strong>. The
+       Android app does not use Apple Ads attribution.</p>
+
     <h2 id="partners">Links to partners</h2>
     <p>The &ldquo;Right now&rdquo; screen ends with a link to Online-Therapy.com, an independent
        online therapy service. It is an advertisement: if you subscribe after following that link,
@@ -115,8 +128,10 @@
     <p>We do not add analytics or crash-reporting SDKs of our own, and we do not use third-party ad
        networks or cross-app tracking; the app does not request tracking permission. The only usage
        and diagnostic data that leaves the app is the paywall interaction events, the optional
-       post-purchase answer, approximate location and diagnostic data described under <a href="#purchases">Purchases</a>, which are
-       not linked to your identity, and, on Android, the data Google&rsquo;s Play components
+       post-purchase answer, approximate location and diagnostic data described under <a href="#purchases">Purchases</a>
+       and, on iPhone, the Apple Ads attribution described under
+       <a href="#apple-ads">Apple Ads attribution</a>, all of which are not linked to your
+       identity, and, on Android, the data Google&rsquo;s Play components
        handle as described there. The only advertisement in the app is the partner link
        described above: it is a plain link, it loads no ad-network code, and it does nothing at all
        until you tap it.</p>
